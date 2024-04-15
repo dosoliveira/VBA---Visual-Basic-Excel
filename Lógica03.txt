@@ -1,0 +1,24 @@
+Algotitmo 03
+
+
+
+Sub Macro03()
+
+'variaveis
+Dim htrabalhadas, msalario, vhora, bsalario, imposto, salarior As Double
+
+'entrada de dados
+htrabalhadas = CDbl(InputBox("Qual a quantidade de horas trabalhadas? "))
+msalario = CDbl(InputBox("Qual o valor do salário mínimo?"))
+'processamento
+vhora = msalario / 2
+bsalario = htrabalhadas * vhora
+imposto = 3 / 100
+imposto = (imposto * bsalario)
+salarior = bsalario - imposto
+'saidadedados
+ActiveCell.Value = vhora
+ActiveCell.Offset(0, 1) = bsalario
+ActiveCell.Offset(0, 2) = imposto
+ActiveCell.Offset(0, 3) = salarior
+End Sub

@@ -1,0 +1,27 @@
+Algoritmo 01
+
+
+Sub Macro1()
+'variaveis
+Dim qh, soma, qc, qf, qr, qm, vqh As Double
+'entradada de dados
+qh = Cells(2, 2).Value
+qc = Cells(3, 2).Value
+qf = Cells(4, 2).Value
+qr = Cells(5, 2).Value
+qm = Cells(6, 2).Value
+
+'processamento
+qh = qh * Cells(9, 2).Value
+qc = qc * Cells(10, 2).Value
+qf = qf * Cells(11, 2).Value
+qr = qr * Cells(12, 2).Value
+qm = qm * Cells(13, 2).Value
+
+
+'saida
+MsgBox qh & vbCrLf & qc & vbCrLf & qf & vbCrLf & qr & vbCrLf & qm
+soma = qh + qc + qf + qr + qm
+Cells(15, 2) = soma
+
+End Sub

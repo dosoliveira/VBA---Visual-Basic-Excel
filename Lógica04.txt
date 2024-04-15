@@ -1,0 +1,23 @@
+Algotitmo 04
+
+
+Sub Macro04()
+
+
+'declaração de variavel
+Dim ano_nasc As Integer, ano_atual As Integer, idade_anos As Integer, L As Integer
+Dim idade_meses As Integer, idade_semanas As Integer, idade_dias As Integer
+'entrada de dados
+ano_nasc = ActiveCell.Offset(0, -2).Value
+ano_atual = ActiveCell.Offset(0, -1).Value
+idade_anos = ano_atual - ano_nasc
+idade_meses = idade_anos * 12
+idade_semanas = idade_anos * 48
+idade_dias = idade_anos * 365
+'saida de dados
+ActiveCell.Value = idade_anos
+ActiveCell.Offset(0, 1).Value = idade_meses
+ActiveCell.Offset(0, 2) = idade_semanas
+ActiveCell.Offset(0, 3) = idade_dias
+End Sub
+

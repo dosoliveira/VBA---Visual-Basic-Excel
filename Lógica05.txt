@@ -1,0 +1,21 @@
+Algotitmo 05
+Option Explicit
+
+Sub Macro05()
+'variaveis
+Dim circuferencia, comprimento, area, volume As Double
+Dim msg As String
+'entrada de dados
+circuferencia = CDbl(InputBox("Digite a área da circuferência"))
+'processamento
+cumprimento = (2 * 3.14) * circuferencia
+area = 3.14 * (circuferencia * circuferencia)
+volume = 0.75 * 3.14 * (circuferencia * circuferencia * circuferencia)
+'saidadedados
+msg = "O raio registrado foi: " & circuferencia
+msg = msg & vbCrLf & "O comprimento é de: " & comprimento
+msg = msg & vbCrLf & "A área é de: " & area
+msg = msg & vbCrLf & "O volume é de: " & volume
+MsgBox (msg)
+
+End Sub
